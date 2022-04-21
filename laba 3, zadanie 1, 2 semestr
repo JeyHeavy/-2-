@@ -1,0 +1,9 @@
+bool dfs(u, t: int, visited: bool[]):             
+    if u == t
+        return true    
+    visited[u] = true                     
+    for v: uv ∈ E                
+        if not visited[v]               
+            if dfs(v, t, visited)
+                return true
+    return false
